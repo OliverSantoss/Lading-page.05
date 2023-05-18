@@ -224,10 +224,13 @@ section.veiculos-destaque .line-title > h2{
 /* ----------------------------------------------------------------
     Seção de depoimentos e serviços
    --------------------------------------------------------------*/
+section.servicos-descricao{
+    display: flex;
+}
+
 .half1{
-    float: left;
     width: 50%;
-    text-align: center;
+    text-align: right;
     padding: 90px 0;
     background: #242424;
     color: white;
@@ -236,6 +239,7 @@ section.veiculos-destaque .line-title > h2{
 .half1 .half1-wraper{
     display: inline-block;
     text-align: left;
+    padding-right: 100px;
 }
 
 .half1-wraper h2{
@@ -259,6 +263,49 @@ section.veiculos-destaque .line-title > h2{
     margin-left: 40px;
 }
 
+.half2{
+    width: 50%;
+    padding: 90px 100px;
+    background: #EB2D2D;    
+    color: white;
+}
+
+.half2 h2{
+    font-weight: normal;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.half2 .depoimentos-single{
+    margin-top: 20px;
+    max-width: 350px;
+}
+
+.half2 p{
+    font-size: 16px;
+    font-weight: none;
+}
+
+.navegation {
+    margin-top: 25px;
+    max-width: 350px;
+}
+
+.navegation img{
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.navegation .Arrow{
+    float: left;
+}
+
+.navegation .nome-single{
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+
 /* ----------------------------------------------------------------
     Seção das mídias screens
    --------------------------------------------------------------*/
@@ -271,6 +318,23 @@ section.veiculos-destaque .line-title > h2{
         min-height: 500px;
     }
 }
+
+@media screen and (max-width:990px){
+    .half1{
+        text-align: center;
+    }
+
+    .half1 .half1-wraper{
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+} 
 
 @media screen and (max-width:768px){
     header .mobile{
@@ -307,6 +371,22 @@ section.veiculos-destaque .line-title > h2{
         max-width: 600px;
         display: inline-block;
         margin-top: 20px;
+    }
+
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+
+    .half1, .half2{
+        width: 100%;
+    }
+
+    .half2{
+        padding: 90px 20%;
+    }
+
+    .half2 .depoimentos-single{
+        max-width: none;
     }
 }
 
