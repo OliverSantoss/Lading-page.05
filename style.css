@@ -145,7 +145,7 @@ section.veiculos-destaque{
     padding: 90px 2%;
 }
 
-section.veiculos-destaque .line-title{
+.line-title{
     max-width: 900px;
     margin: 0 auto;
     position: relative;
