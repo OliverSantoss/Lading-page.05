@@ -158,7 +158,7 @@ section.veiculos-destaque .containers{
     padding: 40px 0;
 }
 
-section.veiculos-destaque .lin1{
+.lin1{
     position: absolute;
     top: 20px;
     width: 100%;
@@ -166,7 +166,7 @@ section.veiculos-destaque .lin1{
     background-color: black;
 }
 
-section.veiculos-destaque .line-title > h2{
+.line-title > h2{
     padding: 0 20px;
     position: relative;
     background-color: white;
@@ -306,11 +306,97 @@ section.servicos-descricao{
     font-size: 23px;
 }
 
+footer{
+    padding: 40px 2%;
+    background-color: #252525;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+
+footer nav li{
+    float: left;
+    font-size: 19px;
+    padding: 0 35px;
+}
+
+footer nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    float: right;
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* ----------------------------------------------------------------
+    Seção Contato
+   --------------------------------------------------------------*/
+
+section.contato{
+    padding: 80px 2%;
+}
+
+.contato form{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.contato .input-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.contato input[type=text]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+.contato textarea{
+    width: 100%;
+    border: 1 solid #ccc;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+}
+
+.input-wraper:nth-of-type(5){
+    text-align: center;
+}
+
+.contato input[type=submit]{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
 /* ----------------------------------------------------------------
     Seção das mídias screens
    --------------------------------------------------------------*/
 
-@media  screen and (max-width:1024px){
+@media screen and (max-width:1024px){
     section.banner{
         background-size: cover;
         background-position: center;
@@ -351,14 +437,15 @@ section.servicos-descricao{
     }
 
     header .desktop{
-    display: none;
+        display: none;
     }
 
     .banner .text-banner{
         padding: 50px;
     }
+
     .banner .text-banner-single{
-    font-size: 23px;
+        font-size: 23px;
     }
 
     section.veiculos-destaque .containers{
@@ -387,6 +474,18 @@ section.servicos-descricao{
 
     .half2 .depoimentos-single{
         max-width: none;
+    }
+
+    footer nav{
+        display: none;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer p{
+        float: none;
     }
 }
 
