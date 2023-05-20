@@ -393,6 +393,109 @@ section.contato{
 }
 
 /* ----------------------------------------------------------------
+    Seção de Vendas
+-----------------------------------------------------------------*/
+
+section.venda{
+    min-height: 90%;
+    padding: 90px 0;
+}
+
+.venda .content-venda{
+    margin-top: 40px;
+}
+
+.search1 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.search1 .barra-preco{
+    width: 300px;
+    height: 20px;
+    background-color: white;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.search1 .barra-preco-fill{
+    position: absolute;
+    left: 0;
+    top : 0;
+    width: 30%;
+    height: 19px;
+    background: rgb(200,200,200);
+    border-radius: 20px;
+}
+
+.search1 .pointer-barra{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: calc(30% - 13px);
+    top: -2px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(210,210,210);
+    border: 1px solid black;
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+    max-width: 300px;
+}
+
+.valor-pesquisa p{
+    color: black;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+.search2{
+    margin-top: 10px;
+}
+
+.search2 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.form-venda-wraper{
+    margin-top: 10px;
+}
+
+.form-venda-wraper input {
+    display: none;
+}
+
+.form-venda-wraper label{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.form-venda-wraper span{
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* ----------------------------------------------------------------
     Seção das mídias screens
    --------------------------------------------------------------*/
 
