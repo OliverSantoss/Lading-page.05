@@ -393,12 +393,17 @@ section.contato{
 }
 
 /* ----------------------------------------------------------------
-    Seção de Vendas
+    Seção Página de Vendas
 -----------------------------------------------------------------*/
 
 section.venda{
-    min-height: 90%;
     padding: 90px 0;
+    height: 100%;
+}
+
+.venda .sidebar{
+    width: 30%;
+    float: left;
 }
 
 .venda .content-venda{
@@ -412,7 +417,8 @@ section.venda{
 }
 
 .search1 .barra-preco{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 20px;
     background-color: white;
     margin-top: 8px;
@@ -428,20 +434,20 @@ section.venda{
     top : 0;
     width: 30%;
     height: 19px;
-    background: rgb(200,200,200);
+    background: linear-gradient(to bottom, rgb(63, 53, 53), rgb(200,200,200));
     border-radius: 20px;
 }
 
 .search1 .pointer-barra{
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 17px;
     position: absolute;
     left: calc(30% - 13px);
-    top: -2px;
+    top: 0px;
     cursor: pointer;
     border-radius: 8px;
-    background-color: rgb(210,210,210);
-    border: 1px solid black;
+    border: 1px solid #ccc;
+    background: linear-gradient(to left, rgb(63, 53, 53), rgb(200,200,200));
 }
 
 .valor-pesquisa{
@@ -462,7 +468,7 @@ section.venda{
 }
 
 .search2{
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .search2 h2{
@@ -487,6 +493,22 @@ section.venda{
     border-radius: 3px;
     vertical-align: top;
     cursor: pointer;
+    position: relative;
+}
+
+.circle{
+    display: none;
+    width: 8px; 
+    height: 8px;
+    border-radius: 4px;
+    background: black;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.form-venda-wraper input[type="checkbok"]:checked + label > .circle{
+    display: block;
 }
 
 .form-venda-wraper span{
@@ -495,9 +517,26 @@ section.venda{
     vertical-align: top;
 }
 
+.venda .vitrine-venda{
+    float: left;
+    width: 70%;
+}
+
 /* ----------------------------------------------------------------
     Seção das mídias screens
    --------------------------------------------------------------*/
+
+@media screen and (max-width: 1280px){
+    section.venda .center{
+        max-width: 1000px;
+    }
+
+    .search1 .barra-preco,
+    .search1 .valor-pesquisa{
+        width: 100%;
+        max-width: 250px;
+    }
+}
 
 @media screen and (max-width:1024px){
     section.banner{
@@ -522,6 +561,33 @@ section.venda{
         display: block;
         margin-left: 0;
         margin-top: 15px;
+    }
+
+    /* -------------- Página de vendas ------------------*/
+    .venda .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar .search1,
+    .sidebar .search2{
+        display: inline-block;
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .search1 .barra-preco,
+    .search1 .valor-pesquisa{
+        display: inline-block;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .venda .vitrine-venda{
+        width: 100%;
+        text-align: center;
+        float: none;
+        display: inline-block;
     }
 } 
 
@@ -590,6 +656,11 @@ section.venda{
     footer p{
         float: none;
     }
+
+    /* -------------- Página de vendas ------------------*/
+    section.venda{
+        height: auto;
+    }
 }
 
 @media screen and (max-width:580px){
@@ -609,5 +680,4 @@ section.venda{
     .vitrine-destaque{
         max-width: 400px;
     }
-
 }
