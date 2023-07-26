@@ -66,7 +66,7 @@ section.banner{
     width: 100%;
     height: 600px;
     background-color: black;
-    background-image: url('imagens/bg.jpg');
+    background-image: url('../images/bg.jpg');
     background-size: contain;
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ section.banner{
     text-transform: uppercase;
     color: white;
     font-size: 26px;
-    background-image: url("./imagens/box-text.png");
+    background-image: url("../images/box-text.png");
 }
 
 .banner .text-banner-single:nth-of-type(2){
@@ -104,7 +104,7 @@ section.banner{
 }
 
 .banner .text-banner-single:nth-of-type(4){
-    background-image: url("./imagens/box-white-text.png");
+    background-image: url("../images/box-white-text.png");
     color: black;
     font-size: 20px;
     font-style: italic;
@@ -374,7 +374,7 @@ section.contato{
 -----------------------------------------------------------------*/
 
 section.venda{
-    padding: 90px 0;
+    padding: 5px 0;
     height: 100%;
 }
 
