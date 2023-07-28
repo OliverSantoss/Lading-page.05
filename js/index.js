@@ -49,4 +49,32 @@ $(function () {
             return preco_arr[0][0] + preco_arr[0][1] + '.' + preco_arr[0].substr(2, preco_arr[0].length) + ',' + preco_arr[1];
         }
     }
+
+    var depoimento = $('.depoimentos-single p');
+    var amtdepoimento = depoimento.length;
+    var curIndex = 0;
+
+    iniciarDepoimento();
+    navegarDepoimento();
+
+    function iniciarDepoimento() {
+        depoimento.hide();
+        depoimento.eq(0).show();
+    }
+
+    function navegarDepoimento() {
+        $('[next]').click(() => {
+            curIndex++;
+            if (curIndex >= amtdepoimento) { curIndex = 0; }
+            depoimento.hide();
+            depoimento.eq(curIndex).show();
+        });
+
+        $('[prev]').click(() => {
+            curIndex--;
+            if (curIndex < 0) { curIndex = amtdepoimento - 1 };
+            depoimento.hide();
+            depoimento.eq(curIndex).show();
+        });
+    }
 });
