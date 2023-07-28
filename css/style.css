@@ -409,7 +409,7 @@ section.venda{
     position: absolute;
     left: 0;
     top : 0;
-    width: 30%;
+    width: 0%;
     height: 19px;
     background: linear-gradient(to bottom, rgb(63, 53, 53), rgb(200,200,200));
     border-radius: 20px;
@@ -419,7 +419,7 @@ section.venda{
     width: 18px;
     height: 17px;
     position: absolute;
-    left: calc(30% - 13px);
+    left: 0;
     top: 0px;
     cursor: pointer;
     border-radius: 8px;
